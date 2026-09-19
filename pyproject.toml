@@ -1,0 +1,21 @@
+[project]
+name = "atelier-mcp"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server integration for managing invoicing, clients, articles, and payment analyses using FastMCP and Python."
+readme = "README.md"
+authors = [
+    { name = "marouen ksentini", email = "marouenksentini@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=4.0.5",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+atelier-mcp = "atelier_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
